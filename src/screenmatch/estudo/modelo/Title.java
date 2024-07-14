@@ -2,7 +2,9 @@ package screenmatch.estudo.modelo;
 
 import org.w3c.dom.ls.LSOutput;
 
-public class Title {
+public class Title implements Comparable<Title> {
+
+
     private String nome;
     private int anoDeLancamento;
     private boolean incluindoNoPlano;
@@ -64,6 +66,8 @@ public class Title {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 
-
-
+    @Override
+    public int compareTo (Title outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
+    }
 }

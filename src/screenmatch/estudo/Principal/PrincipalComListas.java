@@ -13,7 +13,7 @@ public class PrincipalComListas {
         Film filme2 = new Film("Euro tripo",2004);
         Serie RickAndMorty = new Serie("Rick And Morty", 2021);
 
-        List<Title> lista = new LinkedList<>();
+        List<Title> lista = new LinkedList<>(); // Formato de lista mais utilizado
 
         lista.add(filme2);
         lista.add(filme1);
@@ -27,7 +27,7 @@ public class PrincipalComListas {
 
         }
 
-        ArrayList <String> buscarPorArtista = new ArrayList<>();
+        ArrayList <String> buscarPorArtista = new ArrayList<>(); // formato de lista utilizando array
         buscarPorArtista.add("Rick Sanchez");
         buscarPorArtista.add("Chopper");
         buscarPorArtista.add("Monkey D. Luffy");
